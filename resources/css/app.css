@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    transform: translateY(-100%);
+}
+.notification-sucess{
+    background-color: #f5f3efd5; 
+    color: rgb(255, 136, 0);
+}
+.notification-error{
+    background-color: #f66605b8; 
+    color: white;
+
+
+}
+.notification.slide-in {
+    animation: slideIn 0.5s forwards;
+    display: block;
+}
+
+.notification.slide-out {
+    animation: slideOut 0.5s forwards;
+}
+@font-face {
+    font-family: 'Blackadder ITC';
+    src: url('chemin_vers_votre_fichier/BlackadderITC.ttf'); /* Ajustez ce chemin */
+}
+
+
+.logo-cursive {
+    font-family:  'Blackadder ITC', cursive;;
+}
+.welcome{
+    background-image: url("C:/Users/Faquira/Downloads/college admission-pana.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
